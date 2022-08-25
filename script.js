@@ -8,7 +8,7 @@ function show(id){
     section.classList.remove("hidden");
 }
 
-function myFunction(value){
+function alterValue(value){
     var number = document.getElementById("number");
     number.innerHTML = value;
 }

@@ -12,14 +12,10 @@
     --Dark_Blue: hsl(213, 19%, 18%);
 }
 
-.attribution { font-size: 11px; text-align: center; margin-top: 20px; color: white}
-.attribution a { color: hsl(228, 45%, 44%); }
-
 body{width: 100%; height: 100vh;background-color: var(--Very_Dark_Blue); display:flex; flex-direction: column; justify-content: center; align-items: center; font-family: "Overpass", sans-serif;}
 
 main{ min-width: 200px;}
 
-#rating img{background-color: #2D3743; border-radius:100%; border: solid 7px #2D3743;}
 
 section{
     display: block;
@@ -32,8 +28,9 @@ section{
     margin: 0 20px;
 }
 
-section > *:not(img){
-    margin-top:28px;
+
+section > *{
+    margin-top:20px;
 }
 
 section p{
@@ -46,25 +43,6 @@ section h2 {
 
 section p {
     line-height: 25px;
-}
-
-.btn{
-    color: var(--White);
-    background-color: hsl(213, 20%, 22%);
-    width:50px;
-    height:50px;
-    border-radius: 360%; 
-    border-style: none;
-    transition: 0.4s;
-}
-
-.btn:hover{
-    cursor: pointer;
-    background-color:var(--Orange);
-}
-
-.btn:focus{
-    background-color:var(--Medium-Grey);
 }
 
 ul{
@@ -103,13 +81,40 @@ h2{
 
 p{color:white}
 
+/*RATING*/
+
+#rating img{background-color: #2D3743; border-radius:100%; border: solid 7px #2D3743; margin: 5px auto;}
+
+
+.btn{
+    color: var(--White);
+    background-color: hsl(213, 20%, 22%);
+    width:50px;
+    height:50px;
+    border-radius: 360%; 
+    border-style: none;
+    transition: 0.4s;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color:var(--Orange);
+}
+
+.btn:focus{
+    background-color:var(--Medium-Grey);
+}
+
+
+
+/*FEEDBACK*/
 
 #feedback{
     text-align: center;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: var(--Dark_Blue);
-    max-width: 400px;height:400px;
-    padding: 24px;
+    max-width: 325px;height:350px;
+    padding: 30px 40px;
 }
 
 #feedback h2{
@@ -120,28 +125,16 @@ p{color:white}
     background-color: #2D3743;
     width:50%;
     border-radius: 15px;
-    margin:25px auto;
+    margin:28px auto 0px auto;
     color: var(--Orange);
-}
-
-button[type="return"]{
-    background-color: var(--Orange);
-    color: #fff;
-    width: 100%;
-    padding: 0.8rem 0 0.6rem;
-    border: none;
-    border-radius: 30px;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    cursor: pointer;
-    transition: 0.3s;
-}
-button[type="return"]:hover{
-    color:var(--Orange);
-    background-color: var(--White);
 }
 
 .hidden {
     display: none;
 }
 
+
+
+/*FOOTER*/
+.attribution { font-size: 11px; text-align: center; margin-top: 20px; color: white}
+.attribution a { color: hsl(228, 45%, 44%); }
