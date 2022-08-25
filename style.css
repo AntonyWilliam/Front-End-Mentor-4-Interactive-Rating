@@ -21,16 +21,16 @@ section{
     display: block;
     border-radius: 20px;
     background-color: var(--Dark_Blue);
-    max-width: 340px;
+    max-width: 350px;
     max-height:auto;
-    padding: 24px;
+    padding: 28px 32px;
     position: relative;
     margin: 0 20px;
 }
 
 
 section > *:not(p){
-    margin-top:20px;
+    margin-top:24px;
 }
 section p{
     margin-top:10px
@@ -88,7 +88,7 @@ p{color:white}
 
 /*RATING*/
 
-#rating img{background-color: #2D3743; border-radius:100%; border: solid 7px #2D3743; margin: 5px auto;}
+#rating img{background-color: #2D3743; border-radius:100%; border: solid 12px #2D3743; margin: 5px  auto; height:12px; width:auto;}
 
 
 .btn{
