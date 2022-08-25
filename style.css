@@ -36,7 +36,7 @@ section > *{
 section p{
     color: var(--Light_Grey);
 }
-section h2 {
+section h1 {
     font-size:xx-large;
     
 }
@@ -75,7 +75,7 @@ button[type="submit"]:hover{
     background-color: var(--White);
 }
 
-h2{
+h1{
     color:white;
 }
 
@@ -117,7 +117,7 @@ p{color:white}
     padding: 30px 40px;
 }
 
-#feedback h2{
+#feedback h1{
     font-size: x-large;
 }
 
