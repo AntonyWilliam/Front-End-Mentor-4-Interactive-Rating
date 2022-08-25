@@ -2,8 +2,9 @@ var number = null;
 
 function hidde_show(id, id2) {
     if(number == null){
-        var warning = document.getElementById("alert")
-        warning.style.opacity = "1"
+        var warning = document.getElementById("alert");
+        warning.classList.add("shake");
+        warning.style.opacity = "1";
         return
     }
 
@@ -15,8 +16,9 @@ function hidde_show(id, id2) {
         var section2 = document.getElementById(id2);
         section2.classList.remove("hidden");
 
-        var warning = document.getElementById("alert")
-        warning.style.opacity = "0"
+        var warning = document.getElementById("alert");
+        warning.classList.remove("shake");
+        warning.style.opacity = "0";
     }
 }
 
