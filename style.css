@@ -29,17 +29,22 @@ section{
 }
 
 
-section > *{
+section > *:not(p){
     margin-top:20px;
+}
+section p{
+    margin-top:10px
 }
 
 section p{
     color: var(--Light_Grey);
 }
-section h1, h2 {
-    font-size:xx-large;
+section h1 {
+    font-size:x-large;
+    margin-bottom: 0px;
     
 }
+
 
 section p {
     line-height: 25px;
