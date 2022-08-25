@@ -14,13 +14,29 @@
 </head>
 <body>
 
+
+  <header>
+    <div class="switch">
+	    <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+	    <label for="language-toggle"></label>
+	    <span class="on">EN</span>
+	    <span class="off">PT-BR</span>
+  	</div>
+  </header>
   <!-- Rating state start -->
 
   <main>
     <section id="rating" class="">
       <img src="images/icon-star.svg" alt="">
-      <h1>How did we do?</h1>
-      <p >Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+
+      <!--ENGLISH-->
+      <h1 lang="en">How did we do?</h1>
+      <p lang="en">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+
+
+      <!--portugues-->
+      <h1 lang="pt-br" class="pt_br">Como nos saimos?</h1>
+      <p lang="pt-br" class="pt_br">Por favor, nos informe como nos saimos com sua solicitação do suporte. Todos os comentários são apreciados para nos ajudar a melhorar nossa oferta!</p>
       <ul>
         <li><button  onclick="alterValue(1)" class="btn">1</button></li>
         <li><button  onclick="alterValue(2)" class="btn">2</button></li>
@@ -28,20 +44,35 @@
         <li><button  onclick="alterValue(4)" class="btn">4</button></li>
         <li><button  onclick="alterValue(5)" class="btn">5</button></li>
       </ul>
-      <button onclick="hidde_show('rating','feedback')" type="submit">SUBMIT</button>
+      <button lang="en" onclick="hidde_show('rating','feedback')" type="submit" >SUBMIT</button>
+
+      <button lang="pt-br" onclick="hidde_show('rating','feedback')" type="submit"  class="pt_br">ENVIAR</button>
     </section>
     <!-- Rating state end -->
     <!-- Thank you state start -->
     <section id="feedback" class="hidden">
       <img src="images/illustration-thank-you.svg" alt="">
-      <p>You selected <span id="number">0</span> out of 5</p>
+      <p lang="en">You selected <span id="number">0</span> out of 5</p>
       <h2>Thank you!</h2>
-      <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+      <p lang="en">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+    </section>
+
+    <section id="feedback" class="hidden">
+      <img src="images/illustration-thank-you.svg" alt="">
+      <p lang="pt-br"  class="pt_br">Você selecionou <span id="number">0</span> de 5</p>
+      <h2>Obrigado!</h2>
+      <p lang="pt-br"  class="pt_br">Agradecemos que você reservou um tempo para dar uma classificação. Se você precisar de mais ajuda, não hesite em entrar em contato!
+      </p>
     </section>
 
     <div id="alert" class="alert">
-      <span class="closebtn" onclick="this.parentElement.style.opacity='0';">&times;</span> 
+      <span lang="en" class="closebtn" onclick="this.parentElement.style.opacity='0';">&times;</span> 
     <strong>Warning!</strong>  You need to select a number</div>
+
+
+    <div id="alert" class="alert">
+      <span lang="pt-br" class="closebtn" onclick="this.parentElement.style.opacity='0';">&times;</span> 
+    <strong>Aviso!</strong>  Você precisa selecionar um numero</div>
     
   </main>
 

@@ -1,4 +1,7 @@
-let number = null;
+
+
+var portugues = document.querySelectorAll(".pt_br");
+portugues.classList.add("hidde")
 
 function hidde_show(id, id2) {
     if(number == null){
@@ -27,3 +30,9 @@ function alterValue(value){
     number2.innerHTML = value;
     number = value;
 }
+
+function hide() {
+
+}
+
+
