@@ -134,6 +134,32 @@ p{color:white}
 }
 
 
+/*ALERT*/
+
+.alert {
+    opacity: 0;
+    top: 30px;
+    position:absolute;
+    padding: 20px;
+    background-color: #ff9800;
+    color: white;
+    border-radius: 20px;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
 
 /*FOOTER*/
 .attribution { font-size: 11px; text-align: center; margin-top: 20px; color: white}

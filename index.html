@@ -28,7 +28,7 @@
         <li><button  onclick="alterValue(4)" class="btn">4</button></li>
         <li><button  onclick="alterValue(5)" class="btn">5</button></li>
       </ul>
-      <button onclick="hidde('rating'); show('feedback')" type="submit">SUBMIT</button>
+      <button onclick="hidde_show('rating','feedback')" type="submit">SUBMIT</button>
     </section>
     <!-- Rating state end -->
     <!-- Thank you state start -->
@@ -40,14 +40,20 @@
     </section>
   </main>
 
-  <!-- Thank you state end -->
 
+
+
+  <!-- warning state-->
+<div id="alert" class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.opacity='0';">&times;</span> 
+  <strong>Warning!</strong>  You need to select a number</div>
+
+    <!-- Thank you state end -->
   
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://www.linkedin.com/in/antony-william/">Antony Ramalho</a>.
-  </footer>
-
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.linkedin.com/in/antony-william/">Antony Ramalho</a>.
+    </footer>
   <script src="script.js"></script>
 </body>
 </html>
